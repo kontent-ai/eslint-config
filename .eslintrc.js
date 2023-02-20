@@ -36,6 +36,7 @@ module.exports = {
     'import/no-useless-path-segments': 'error',
     'import/first': 'error',
     'import/newline-after-import': 'error',
+    'import/no-unresolved': 'off',
 
     'simple-import-sort/imports': 'error',
 
