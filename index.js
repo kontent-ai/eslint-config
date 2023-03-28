@@ -43,6 +43,8 @@ module.exports = {
     "@typescript-eslint/consistent-indexed-object-style": "error",
     "no-unused-expressions": "off",
     "@typescript-eslint/no-unused-expressions": "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/prefer-literal-enum-member": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
     "no-loop-func": "off",
