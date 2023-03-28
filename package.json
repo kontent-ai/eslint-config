@@ -1,5 +1,5 @@
 {
-  "name": "@kontent-ai/eslint-config",
+  "name": "kontent-ai-eslint-config",
   "version": "0.1.0",
   "description": "Eslint configuration used for packages in Kontent.ai",
   "main": "index.js",
