@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {},
   "author": "Jiri Lojda",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "@typescript-eslint/parser": "^5.5.0"
   },
