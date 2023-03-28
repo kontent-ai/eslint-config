@@ -1,10 +1,10 @@
 {
   "name": "@kontent-ai/eslint-config",
   "version": "0.1.0",
-  "description": "",
+  "description": "Eslint configuration used for packages in Kontent.ai",
   "main": "index.js",
   "scripts": {},
-  "author": "",
+  "author": "Jiri Lojda",
   "license": "ISC",
   "dependencies": {
     "@typescript-eslint/parser": "^5.5.0"
