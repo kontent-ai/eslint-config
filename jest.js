@@ -4,7 +4,7 @@ module.exports = {
   ],
 
   extends: [
-    "@kontent-ai/eslint-config",
+    "kontent-ai",
     "plugin:jest/recommended",
     "plugin:jest/style",
   ],

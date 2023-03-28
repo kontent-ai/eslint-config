@@ -5,7 +5,7 @@ module.exports = {
   ],
 
   extends: [
-    "@kontent-ai/eslint-config",
+    "kontent-ai",
   ],
 
   rules: {
