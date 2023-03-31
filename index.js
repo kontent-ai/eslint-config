@@ -21,6 +21,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:import/recommended",
+    "plugin:import/typescript",
   ],
   rules: {
     "import/no-deprecated": "error",
