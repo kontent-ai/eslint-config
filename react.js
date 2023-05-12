@@ -70,7 +70,7 @@ module.exports = {
     "react/self-closing-comp": "error",
     "react/void-dom-elements-no-children": "error",
     "react/style-prop-object": "error",
-    "react/jsx-no-leaked-render": ["error", { validStrategies: ["coerce"] }],
+    "react/jsx-no-leaked-render": "off",
     "react/prefer-stateless-function": "error",
 
     "react-hooks/rules-of-hooks": "error",
