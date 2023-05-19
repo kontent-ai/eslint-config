@@ -16,7 +16,6 @@ module.exports = {
     "@typescript-eslint",
     "import",
     "simple-import-sort",
-    "import-newlines",
   ],
   extends: [
     "eslint:recommended",
@@ -36,8 +35,6 @@ module.exports = {
     "import/no-unresolved": "off",
 
     "simple-import-sort/imports": "error",
-
-    "import-newlines/enforce": "error",
 
     "no-dupe-class-members": "error",
     "@typescript-eslint/no-dupe-class-members": "error",
