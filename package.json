@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kontent-ai",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Eslint configuration used for packages in Kontent.ai",
   "main": "index.js",
   "scripts": {},

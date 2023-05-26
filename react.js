@@ -25,14 +25,6 @@ module.exports = {
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
     "react/jsx-first-prop-new-line": ["error", "multiline"],
     "react/jsx-fragments": "error",
-    "react/jsx-indent": [
-      "error",
-      2,
-      {
-        checkAttributes: true,
-        indentLogicalExpressions: true,
-      },
-    ],
     "react/jsx-indent-props": ["error", 2],
     "react/jsx-max-props-per-line": "error",
     "react/jsx-no-bind": [
