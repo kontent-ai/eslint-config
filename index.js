@@ -36,7 +36,7 @@ module.exports = {
 
     "simple-import-sort/imports": "error",
 
-    "no-dupe-class-members": "error",
+    "no-dupe-class-members": "off",
     "@typescript-eslint/no-dupe-class-members": "error",
     "@typescript-eslint/consistent-type-assertions": "error",
     "@typescript-eslint/consistent-indexed-object-style": "error",
