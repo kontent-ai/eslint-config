@@ -4,7 +4,7 @@ module.exports = {
   ],
 
   extends: [
-    "kontent-ai",
+    "@kontent-ai",
     "plugin:jest/recommended",
     "plugin:jest/style",
   ],

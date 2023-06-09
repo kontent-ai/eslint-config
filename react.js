@@ -5,7 +5,7 @@ module.exports = {
   ],
 
   extends: [
-    "kontent-ai",
+    "@kontent-ai",
   ],
 
   rules: {
