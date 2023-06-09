@@ -1,4 +1,5 @@
 [![Contributors][contributors-shield]][contributors-url]
+[![npm][npm-shield]](https://www.npmjs.com/package/@kontent-ai/eslint-config)
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -27,6 +28,7 @@ Distributed under the MIT License. See [`LICENSE.md`](./LICENSE.md) for more inf
 
 [contributors-shield]: https://img.shields.io/github/contributors/kontent-ai/eslint-config.svg?style=for-the-badge
 [contributors-url]: https://github.com/kontent-ai/eslint-config/graphs/contributors
+[npm-shield]: https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white
 [forks-shield]: https://img.shields.io/github/forks/kontent-ai/eslint-config.svg?style=for-the-badge
 [forks-url]: https://github.com/kontent-ai/eslint-config/network/members
 [stars-shield]: https://img.shields.io/github/stars/kontent-ai/eslint-config.svg?style=for-the-badge
