@@ -14,7 +14,29 @@ This is the eslint configuration that Kontent.ai uses for its TypeScript package
 
 # Getting Started
 
-Install the package and [extend](https://eslint.org/docs/latest/use/configure/configuration-files#extending-configuration-files) from it your eslint configuration. 
+1. Install the package the eslint configuration.
+
+    ```sh
+    # optionaly install eslint if you don't already have it
+    # npm i --save-dev eslint
+    npm i --save-dev @kontent-ai/eslint-config
+    ```
+
+1. [Extend](https://eslint.org/docs/latest/use/configure/configuration-files#extending-configuration-files) your eslint configuration
+
+    ```jsonc
+    // showcase of .eslintrc.json
+    {
+        // ...
+        "extends": [
+            // ...
+            "@kontent-ai",
+            "@kontent-ai/eslint-config/react"
+        ]
+    }
+    ```
+
+1. Run the lint process based on your project configuration
 
 Available configurations are:
 * `@kontent-ai` (default configuration for any TypeScript file)
