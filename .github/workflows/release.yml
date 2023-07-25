@@ -7,23 +7,18 @@ jobs:
   publish:
     runs-on: ubuntu-latest
 
-
     steps:
       - uses: actions/checkout@v3
-
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version-file: '.nvmrc'
           registry-url: 'https://registry.npmjs.org'
-      - name: Extract version from tag
-        id: get_version
-        uses: battila7/get-version-action@v2
-      - run: npm --no-git-tag-version version ${{ steps.get_version.outputs.version-without-v }}
       - run: npm publish --access=public
+        if: ${{!github.event.release.prerelease}}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_API_KEY }}
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Adjust release version to ${{ steps.get_version.outputs.version-without-v }}
-          branch: ${{ github.event.repository.default_branch }}
+      - run: npm publish --tag prerelease
+        if: ${{github.event.release.prerelease}}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_API_KEY }}
