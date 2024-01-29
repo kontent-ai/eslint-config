@@ -1,6 +1,6 @@
 {
   "name": "@kontent-ai/eslint-config",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Eslint configuration used for packages in Kontent.ai",
   "main": "index.js",
   "private": false,
@@ -8,15 +8,15 @@
   "author": "Jiri Lojda",
   "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
-    "@typescript-eslint/parser": "^5.5.0"
+    "@typescript-eslint/parser": "^6.19.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
     "eslint": "^8.0.0",
-    "eslint-plugin-jest": "^25.0.0",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jest": "^27.0.0",
     "eslint-plugin-react": "^7.0.0",
     "eslint-plugin-react-hooks": "^4.0.0",
-    "eslint-plugin-simple-import-sort": "^9.0.0"
+    "eslint-plugin-simple-import-sort": "^10.0.0"
   }
 }
