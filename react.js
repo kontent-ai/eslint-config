@@ -1,7 +1,6 @@
 module.exports = {
   plugins: [
     "react",
-    "react-hooks",
   ],
 
   extends: [
@@ -9,22 +8,10 @@ module.exports = {
   ],
 
   rules: {
-    "react/hook-use-state": "error",
     "react/jsx-boolean-value": "error",
-    "react/jsx-closing-bracket-location": "error",
-    "react/jsx-closing-tag-location": "error",
-    "react/jsx-curly-brace-presence": "error",
-    "react/jsx-curly-spacing": [
-      "error", {
-        when: "never",
-        attributes: true,
-        children: true,
-      },
-    ],
     "react/jsx-equals-spacing": "error",
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
     "react/jsx-first-prop-new-line": ["error", "multiline"],
-    "react/jsx-fragments": "error",
     "react/jsx-indent-props": ["error", 2],
     "react/jsx-max-props-per-line": "error",
     "react/jsx-no-bind": [
@@ -52,7 +39,6 @@ module.exports = {
       },
     ],
     "react/no-access-state-in-setstate": "error",
-    "react/no-danger": "error",
     "react/no-redundant-should-component-update": "error",
     "react/no-unsafe": "error",
     "react/no-unused-state": "error",
@@ -60,12 +46,8 @@ module.exports = {
     "react/no-typos": "error",
     "react/no-this-in-sfc": "error",
     "react/self-closing-comp": "error",
-    "react/void-dom-elements-no-children": "error",
     "react/style-prop-object": "error",
-    "react/jsx-no-leaked-render": "off",
+    "react/jsx-no-leaked-render": "error",
     "react/prefer-stateless-function": "error",
-
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "error",
   },
 }
