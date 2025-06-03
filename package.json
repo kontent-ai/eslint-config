@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {},
   "author": "Jiri Lojda",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "dependencies": {
     "@typescript-eslint/parser": "^8.1.0",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
