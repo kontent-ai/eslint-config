@@ -9,10 +9,9 @@
   "author": "Jiri Lojda",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/parser": "^8.1.0",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
     "eslint": "^9.9.0",
-    "eslint-plugin-jest": "^28.8.0",
     "eslint-plugin-react": "^7.35.0"
   }
 }
