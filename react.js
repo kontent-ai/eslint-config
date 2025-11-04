@@ -1,12 +1,12 @@
-module.exports = {
-  plugins: [
-    "react",
-  ],
+import reactPlugin from "eslint-plugin-react";
+import baseConfig from "./index.js";
+import { defineConfig } from "eslint/config";
 
-  extends: [
-    "@kontent-ai",
-  ],
-
+export default defineConfig([{
+  extends: [baseConfig],
+  plugins: {
+    react: reactPlugin,
+  },
   rules: {
     "react/jsx-boolean-value": "error",
     "react/jsx-equals-spacing": "error",
@@ -50,4 +50,4 @@ module.exports = {
     "react/jsx-no-leaked-render": "error",
     "react/prefer-stateless-function": "error",
   },
-}
+}]);

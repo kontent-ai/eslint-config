@@ -1,20 +1,26 @@
-module.exports = {
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    project: "./tsconfig.json",
-    ecmaFeatures: {
-      jsx: true,
+import tsParser from "@typescript-eslint/parser";
+import tsPlugin from "@typescript-eslint/eslint-plugin";
+import { defineConfig } from "eslint/config";
+
+export default defineConfig([{
+  languageOptions: {
+    parser: tsParser,
+    parserOptions: {
+      project: "./tsconfig.json",
+      ecmaFeatures: {
+        jsx: true,
+      },
+      sourceType: "module",
     },
-    sourceType: "module",
+  },
+  plugins: {
+    "@typescript-eslint": tsPlugin,
   },
   settings: {
     react: {
       version: "detect",
     },
   },
-  plugins: [
-    "@typescript-eslint",
-  ],
   rules: {
     "no-duplicate-imports": "error",
     "no-promise-executor-return": "error",
@@ -54,4 +60,4 @@ module.exports = {
     "@typescript-eslint/no-unsafe-enum-comparison": "error",
     "@typescript-eslint/strict-boolean-expressions": "warn",
   },
-};
+}]);

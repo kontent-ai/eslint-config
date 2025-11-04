@@ -5,13 +5,17 @@
   "main": "index.js",
   "private": false,
   "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./react": "./react.js"
+  },
   "scripts": {},
   "author": "Jiri Lojda",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.1.0",
-    "@typescript-eslint/parser": "^8.1.0",
-    "eslint": "^9.9.0",
-    "eslint-plugin-react": "^7.35.0"
+    "@typescript-eslint/eslint-plugin": "^8.46.3",
+    "@typescript-eslint/parser": "^8.46.3",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react": "^7.37.5"
   }
 }
