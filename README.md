@@ -10,7 +10,7 @@
 
 # Kontent.ai eslint configuration
 
-This is the eslint configuration that Kontent.ai uses for its TypeScript packages.
+This is the eslint configuration that Kontent.ai uses for its TypeScript packages. This package uses ESLint 9+ Flat Config format.
 
 # Getting Started
 
@@ -22,26 +22,35 @@ This is the eslint configuration that Kontent.ai uses for its TypeScript package
     npm i --save-dev @kontent-ai/eslint-config
     ```
 
-1. [Extend](https://eslint.org/docs/latest/use/configure/configuration-files#extending-configuration-files) your eslint configuration
+1. Extend the configuration in your `eslint.config.js` file (Flat Config format for ESLint 9+ is required)
 
-    ```jsonc
-    // showcase of .eslintrc.json
-    {
-        // ...
-        "extends": [
-            // ...
-            "@kontent-ai",
-            "@kontent-ai/eslint-config/react"
-        ]
-    }
+    ```js
+    // eslint.config.js
+    import kontentAiConfig from "@kontent-ai/eslint-config";
+    import { defineConfig } from "eslint/config";
+
+    export default defineConfig({
+        extends: [ kontentAiConfig ],
+    });
+    ```
+
+    For React projects, use the React-specific configuration:
+
+    ```js
+    // eslint.config.js
+    import kontentAiReactConfig from "@kontent-ai/eslint-config/react";
+    import { defineConfig } from "eslint/config";
+
+    export default defineConfig({
+        extends: [ kontentAiReactConfig ],
+    });
     ```
 
 1. Run the lint process based on your project configuration
 
 Available configurations are:
-* `@kontent-ai` (default configuration for any TypeScript file)
+* `@kontent-ai/eslint-config` (default configuration for any TypeScript file)
 * `@kontent-ai/eslint-config/react` (react specific, extends default)
-* `@kontent-ai/eslint-config/jest` (jest specific, extends default)
 
 # License
 
