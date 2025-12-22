@@ -58,6 +58,5 @@ export default defineConfig([{
     "@typescript-eslint/require-array-sort-compare": "error",
     "@typescript-eslint/no-mixed-enums": "error",
     "@typescript-eslint/no-unsafe-enum-comparison": "error",
-    "@typescript-eslint/strict-boolean-expressions": "warn",
   },
 }]);
