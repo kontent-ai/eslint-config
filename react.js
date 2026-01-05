@@ -8,7 +8,6 @@ export default defineConfig([{
     react: reactPlugin,
   },
   rules: {
-    "react/jsx-boolean-value": "error",
     "react/jsx-equals-spacing": "error",
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
     "react/jsx-first-prop-new-line": ["error", "multiline"],
@@ -45,9 +44,6 @@ export default defineConfig([{
     "react/no-unknown-property": ["error", { ignore: ["css"] }],
     "react/no-typos": "error",
     "react/no-this-in-sfc": "error",
-    "react/self-closing-comp": "error",
     "react/style-prop-object": "error",
-    "react/jsx-no-leaked-render": "error",
-    "react/prefer-stateless-function": "error",
   },
 }]);
