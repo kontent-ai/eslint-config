@@ -18,8 +18,8 @@ This is the eslint configuration that Kontent.ai uses for its TypeScript package
 
     ```sh
     # optionaly install eslint if you don't already have it
-    # npm i --save-dev eslint
-    npm i --save-dev @kontent-ai/eslint-config
+    # pnpm add -D eslint
+    pnpm add -D @kontent-ai/eslint-config
     ```
 
 1. Extend the configuration in your `eslint.config.js` file (Flat Config format for ESLint 9+ is required)
