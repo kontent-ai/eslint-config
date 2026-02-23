@@ -9,10 +9,10 @@ importers:
   .:
     dependencies:
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.46.3
+        specifier: ^8.56.0
         version: 8.56.0(@typescript-eslint/parser@8.56.0(eslint@9.39.3)(typescript@5.9.3))(eslint@9.39.3)(typescript@5.9.3)
       '@typescript-eslint/parser':
-        specifier: ^8.46.3
+        specifier: ^8.56.0
         version: 8.56.0(eslint@9.39.3)(typescript@5.9.3)
       eslint:
         specifier: ^9.39.1
