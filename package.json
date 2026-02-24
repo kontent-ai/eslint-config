@@ -5,6 +5,10 @@
   "main": "index.js",
   "private": false,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kontent-ai/eslint-config.git"
+  },
   "exports": {
     ".": "./index.js",
     "./react": "./react.js"
