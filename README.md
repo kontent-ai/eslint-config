@@ -14,12 +14,10 @@ This is the eslint configuration that Kontent.ai uses for its TypeScript package
 
 # Getting Started
 
-1. Install the package the eslint configuration.
+1. Install the package and eslint.
 
     ```sh
-    # optionaly install eslint if you don't already have it
-    # pnpm add -D eslint
-    pnpm add -D @kontent-ai/eslint-config
+    pnpm add -D @kontent-ai/eslint-config eslint
     ```
 
 1. Extend the configuration in your `eslint.config.js` file (Flat Config format for ESLint 9+ is required)

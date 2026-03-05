@@ -1,4 +1,4 @@
-import reactPlugin from "eslint-plugin-react";
+import reactPlugin from "@eslint-react/eslint-plugin";
 import baseConfig from "./index.js";
 import { defineConfig } from "eslint/config";
 
