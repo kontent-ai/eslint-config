@@ -3,13 +3,11 @@ import tsPlugin from "@typescript-eslint/eslint-plugin";
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([{
+  files: ["**/*.ts", "**/*.tsx"],
   languageOptions: {
     parser: tsParser,
     parserOptions: {
       project: "./tsconfig.json",
-      ecmaFeatures: {
-        jsx: true,
-      },
       sourceType: "module",
     },
   },

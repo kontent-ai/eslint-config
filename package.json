@@ -12,6 +12,9 @@
   "exports": {
     ".": "./index.js"
   },
+  "files": [
+    "index.js"
+  ],
   "scripts": {},
   "author": "Jiri Lojda",
   "license": "MIT",
