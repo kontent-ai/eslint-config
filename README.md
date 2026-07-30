@@ -10,7 +10,7 @@
 
 # Kontent.ai eslint configuration
 
-This is the eslint configuration that Kontent.ai uses for its TypeScript packages. This package uses ESLint 10+ Flat Config format and requires Node.js `^20.19.0 || ^22.13.0 || >=24.0.0`.
+This is the eslint configuration that Kontent.ai uses for its TypeScript packages. This package uses the ESLint Flat Config format, supports ESLint `^9.22.0 || ^10.0.0`, and requires Node.js `^20.19.0 || ^22.13.0 || >=24.0.0`.
 
 For React projects, JSX formatting and React-specific linting are covered by [`@kontent-ai/biome-config`](https://github.com/kontent-ai/biome-config) instead of this package.
 
@@ -19,10 +19,10 @@ For React projects, JSX formatting and React-specific linting are covered by [`@
 1. Install the package the eslint configuration.
 
     ```sh
-    # optionaly install eslint if you don't already have it
-    # pnpm add -D eslint
-    pnpm add -D @kontent-ai/eslint-config
+    pnpm add -D eslint @kontent-ai/eslint-config
     ```
+
+    `eslint`, `@typescript-eslint/eslint-plugin`, and `@typescript-eslint/parser` are peer dependencies. Package managers with automatic peer installation (npm 7+, pnpm 8+) install them for you; otherwise add them explicitly.
 
 1. Extend the configuration in your `eslint.config.js` file (Flat Config format is required)
 
