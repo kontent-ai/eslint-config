@@ -11,3 +11,5 @@
 /.vscode
 
 pnpm-debug.log*
+
+*.tgz
