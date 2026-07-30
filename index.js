@@ -16,11 +16,6 @@ export default defineConfig([{
   plugins: {
     "@typescript-eslint": tsPlugin,
   },
-  settings: {
-    react: {
-      version: "detect",
-    },
-  },
   rules: {
     "no-duplicate-imports": "error",
     "no-promise-executor-return": "error",

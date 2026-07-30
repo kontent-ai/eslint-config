@@ -10,7 +10,9 @@
 
 # Kontent.ai eslint configuration
 
-This is the eslint configuration that Kontent.ai uses for its TypeScript packages. This package uses ESLint 9+ Flat Config format.
+This is the eslint configuration that Kontent.ai uses for its TypeScript packages. This package uses ESLint 10+ Flat Config format and requires Node.js `^20.19.0 || ^22.13.0 || >=24.0.0`.
+
+For React projects, JSX formatting and React-specific linting are covered by [`@kontent-ai/biome-config`](https://github.com/kontent-ai/biome-config) instead of this package.
 
 # Getting Started
 
@@ -22,7 +24,7 @@ This is the eslint configuration that Kontent.ai uses for its TypeScript package
     pnpm add -D @kontent-ai/eslint-config
     ```
 
-1. Extend the configuration in your `eslint.config.js` file (Flat Config format for ESLint 9+ is required)
+1. Extend the configuration in your `eslint.config.js` file (Flat Config format is required)
 
     ```js
     // eslint.config.js
@@ -34,23 +36,7 @@ This is the eslint configuration that Kontent.ai uses for its TypeScript package
     });
     ```
 
-    For React projects, use the React-specific configuration:
-
-    ```js
-    // eslint.config.js
-    import kontentAiReactConfig from "@kontent-ai/eslint-config/react";
-    import { defineConfig } from "eslint/config";
-
-    export default defineConfig({
-        extends: [ kontentAiReactConfig ],
-    });
-    ```
-
 1. Run the lint process based on your project configuration
-
-Available configurations are:
-* `@kontent-ai/eslint-config` (default configuration for any TypeScript file)
-* `@kontent-ai/eslint-config/react` (react specific, extends default)
 
 # License
 
